@@ -63,6 +63,14 @@ public class Dealer{
 		}
 	}
 	
+	public boolean isCardHidden() {
+		if(dealerDeck.getCardsRemaining() == 2) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
 	public Deck getDealerDeck() {
 		return dealerDeck;
 	}

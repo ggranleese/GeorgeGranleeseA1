@@ -7,8 +7,8 @@ public class GameConsoleTest extends TestCase{
 	public void testDealCards() {
 		GameConsole game = new GameConsole();
 		game.dealCards();
-		assertTrue(game.player.getPlayerScore() != 0);
-		assertTrue(game.dealer.getDealerScore() != 0);
+		assertTrue(game.player.getScore() != 0);
+		assertTrue(game.dealer.getScore() != 0);
 	}
 	
 	public void testWinner() {

@@ -4,9 +4,11 @@ public class Player {
 	
 	Deck playerDeck;
 	int playerScore;
+	boolean stand;
 	
 	public Player(Deck d) {
 		playerDeck = d;
+		stand = false;
 	}
 	
 	public void newRound() {
@@ -32,8 +34,8 @@ public class Player {
 		}
 	}
 	
-	public int stand() {
-		return playerScore;
+	public void stand() {
+		stand = true;
 	}
 	
 	public boolean checkBJ() {
