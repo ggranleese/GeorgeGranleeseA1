@@ -27,11 +27,14 @@ public class GameConsole {
 	
 	public void dealCards() {
 		
+		System.out.println("\n");
+		
 		for(int i=0; i<2; i++) {
 			player.getPlayerDeck().add(gameDeck.dealCard());
 			System.out.println(player.getPlayerDeck().getCard(i));;
 		}
-		System.out.println("Player Score: " + player.getScore());
+		System.out.println("\n Player Score: " + player.getScore());
+		System.out.println("");
 		
 		for(int i=0; i<2; i++) {
 			dealer.getDealerDeck().add(gameDeck.dealCard());
@@ -40,7 +43,7 @@ public class GameConsole {
 			}
 		}
 		
-		System.out.println("Dealer Score: " + dealer.getDealerDeck().getCard(0).getVal());
+		System.out.println("\nDealer Score: " + dealer.getDealerDeck().getCard(0).getVal());
 		
 		playRound();
 		

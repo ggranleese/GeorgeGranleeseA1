@@ -14,7 +14,7 @@ public class GameFileInput extends GameConsole{
 		player = new Player(new Deck());
 		gameDeck = new Deck();
 		readFile();
-		dealCards();
+		System.out.println(gameDeck.toString());
 		
 	}
 	
