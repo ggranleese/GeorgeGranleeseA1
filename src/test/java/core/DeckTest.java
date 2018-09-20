@@ -35,7 +35,7 @@ public class DeckTest extends TestCase{
 		Deck deck = new Deck();
 		Card card = new Card(1,1);
 		deck.add(card);
-		assertEquals("HA", deck.toString());
+		assertEquals("HA\n", deck.toString());
 	}
 
 	
