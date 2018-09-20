@@ -22,6 +22,8 @@ public class DealerTest extends TestCase {
 		dealer.newRound();
 		dealer.hit(deck);
 		dealer.hit(deck);
+		
+		dealer.getScore();
 		assertEquals(false, dealer.doesDealerHit());
 	}
 	
