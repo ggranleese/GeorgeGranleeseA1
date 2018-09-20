@@ -14,7 +14,7 @@ public class DeckTest extends TestCase{
 		Deck deck = new Deck();
 		Card card = new Card(1,1);
 		deck.add(card);
-		assertEquals(1, deck.getCardsRemaning());
+		assertEquals(1, deck.getCardsRemaining());
 	}
 	
 	public void testRemoveCard() {
@@ -28,16 +28,9 @@ public class DeckTest extends TestCase{
 	public void testDealCard() {
 		Deck deck = new Deck();
 		deck.populate();
-		Card card = new Card(1,1);
-		assertEquals(card, deck.dealCard());
+		assertEquals("HA", deck.dealCard().toString());
 	}
-	
-	public void testGetCard() {
-		Deck deck = new Deck();
-		deck.populate();
-		assertEquals("HA", deck.get(0));
-	}
-	
+
 	public void testToString() {
 		Deck deck = new Deck();
 		Card card = new Card(1,1);
