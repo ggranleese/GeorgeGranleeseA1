@@ -47,7 +47,7 @@ public class Dealer{
 		return false;
 	}
 	
-	public boolean checkBus() {
+	public boolean checkBust() {
 		if(dealerScore > 21) {
 			return true;
 		}else {
