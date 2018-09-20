@@ -12,7 +12,7 @@ public class Card {
 	}
 	
 	public int getVal() {
-		if(type < 10) {
+		if(type < 10 && type != 1 ) {
 			return(type);
 		}else if (type == 1){
 			return(11);

@@ -34,6 +34,14 @@ public class Deck {
 		cards.remove(c);
 	}
 	
+	public void removeAt(int i) {
+		cards.remove(i);
+	}
+	
+	public Card getCard(int i) {
+		return(cards.get(i));
+	}
+	
 	public Card dealCard() {
 		Card deal = cards.get(0);
 		cards.remove(deal);
